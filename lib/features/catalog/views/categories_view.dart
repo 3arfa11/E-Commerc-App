@@ -1,7 +1,6 @@
-import 'package:e_commerce/views/category_products_view.dart';
+import 'package:e_commerce/core/services/product_services.dart';
+import 'package:e_commerce/features/catalog/views/category_products_view.dart';
 import 'package:flutter/material.dart';
-
-import '../core/services/product_services.dart';
 
 class CategoriesView extends StatelessWidget {
   const CategoriesView({super.key});
@@ -30,7 +29,6 @@ class CategoriesView extends StatelessWidget {
                       ),
                     );
                   },
-
                   child: Container(
                     margin: const EdgeInsets.all(8.0),
                     padding: const EdgeInsets.all(16.0),

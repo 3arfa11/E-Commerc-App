@@ -1,6 +1,5 @@
+import 'package:e_commerce/core/services/product_services.dart';
 import 'package:flutter/material.dart';
-
-import '../core/services/product_services.dart';
 
 class CategoryProductsView extends StatelessWidget {
   const CategoryProductsView({super.key, required this.category});
@@ -32,7 +31,6 @@ class CategoryProductsView extends StatelessWidget {
                       '\$${products[index].price.toStringAsFixed(2)}',
                     ),
                     onTap: () {
-                      // Handle tap on the product
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text('Tapped on ${products[index].title}'),

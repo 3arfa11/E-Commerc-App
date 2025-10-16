@@ -3,9 +3,9 @@ import 'package:e_commerce/core/utils/snackbar_helper.dart';
 import 'package:e_commerce/features/authentication/views/login_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/utils/constants.dart';
-import '../../../core/widgets/custom_button.dart';
-import '../../../core/widgets/custom_text_field.dart';
+import 'package:e_commerce/core/utils/constants.dart';
+import 'package:e_commerce/core/widgets/custom_button.dart';
+import 'package:e_commerce/core/widgets/custom_text_field.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class SignUpView extends StatefulWidget {
@@ -24,8 +24,8 @@ class _SignUpViewState extends State<SignUpView> {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
-    final height = MediaQuery.sizeOf(context).height;
+    // final width = MediaQuery.sizeOf(context).width;
+    // final height = MediaQuery.sizeOf(context).height;
     return Scaffold(
       body: Center(
         child: SingleChildScrollView(

@@ -3,7 +3,7 @@ import 'package:e_commerce/core/utils/snackbar_helper.dart';
 import 'package:e_commerce/features/authentication/views/forget_password_view.dart';
 import 'package:e_commerce/features/authentication/views/sign_up_view.dart';
 import 'package:e_commerce/features/authentication/widgets/soical_media_buttons.dart';
-import 'package:e_commerce/views/home_view.dart';
+import 'package:e_commerce/features/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -24,7 +24,7 @@ class _LoginViewState extends State<LoginView> {
   final _passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
+    // final width = MediaQuery.sizeOf(context).width;
     final height = MediaQuery.sizeOf(context).height;
 
     return Scaffold(

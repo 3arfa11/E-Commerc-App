@@ -1,11 +1,9 @@
-import 'package:e_commerce/features/authentication/widgets/test.dart';
 import 'package:e_commerce/features/splash/splash_view.dart';
-import 'package:e_commerce/views/add_product_view.dart';
-import 'package:e_commerce/views/home_view.dart';
+// Removed unused imports
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'features/authentication/views/login_view.dart';
+// import 'features/authentication/views/login_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'E-Commerce App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),

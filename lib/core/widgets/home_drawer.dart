@@ -1,11 +1,13 @@
 import 'package:e_commerce/core/services/firebase_services.dart';
 import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/features/authentication/views/login_view.dart';
-import 'package:e_commerce/views/add_product_view.dart';
-import 'package:e_commerce/views/profile_view.dart';
+import 'package:e_commerce/features/catalog/views/categories_view.dart';
+import 'package:e_commerce/features/products/views/add_product_view.dart';
+import 'package:e_commerce/features/products/views/saved_products.dart';
+import 'package:e_commerce/features/profile/views/profile_view.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../views/categories_view.dart';
 import 'custom_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -55,6 +57,22 @@ class HomeDrawer extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
+            ListTile(
+              leading: CircleAvatar(
+                backgroundColor: Colors.grey.shade300,
+
+                child: const Icon(CupertinoIcons.bookmark_fill),
+              ),
+              title: const Text('Saved'),
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const SavedProductsView(),
+                  ),
+                );
+              },
+            ),
+
             ListTile(
               leading: CircleAvatar(
                 backgroundColor: Colors.grey.shade300,

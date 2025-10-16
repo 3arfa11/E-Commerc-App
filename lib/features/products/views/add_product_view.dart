@@ -1,7 +1,6 @@
+import 'package:e_commerce/core/widgets/custom_button.dart';
+import 'package:e_commerce/core/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
-
-import '../core/widgets/custom_button.dart';
-import '../core/widgets/custom_text_field.dart';
 
 class AddProductView extends StatelessWidget {
   const AddProductView({super.key});
